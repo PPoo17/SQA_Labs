@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-09-13T22:00:15.186683" rpa="false" schemaversion="5">
+<suite id="s1" name="Insurance Test Scenario2" source="C:\ThirdYearTerm1\Sqa\Lab11\Assignments\insurance_test_scenario2.robot">
+<test id="s1-t1" name="UAT-Lab11-002 การขอใบเสนอราคาผลิตภัณฑ์สำหรับรถยนต์ไม่สำเร็จ" line="31">
+<kw name="เปิดเบราว์เซอร์เข้าสู่ระบบ" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:15.486913" level="INFO">Opening browser 'chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-13T22:00:15.486913" elapsed="6.688769"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-13T22:00:22.177189" elapsed="0.020042"/>
+</kw>
+<status status="PASS" start="2026-09-13T22:00:15.485916" elapsed="6.711315"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MENU_AUTOMOBILE}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-13T22:00:22.197231" elapsed="0.008415"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENU_AUTOMOBILE}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-13T22:00:22.205646" elapsed="0.056419"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:22.263064" level="INFO">Clicking element 'id=nav_automobile'.</msg>
+<arg>${MENU_AUTOMOBILE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:22.262065" elapsed="1.995995"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MAKE}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.258060" elapsed="0.010031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_NEXT_INSURANT}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.268091" elapsed="0.011091"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_NEXT_INSURANT}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.279182" elapsed="0.013729"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.292911" level="INFO">Clicking element 'id=nextenterinsurantdata'.</msg>
+<arg>${BTN_NEXT_INSURANT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.292911" elapsed="0.046001"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='entervehicledata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.339911" elapsed="0.008131"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.349044" level="INFO">Clicking element 'id=enterinsurantdata'.</msg>
+<arg>${TAB_INSURANT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.349044" elapsed="0.042190"/>
+</kw>
+<arg>Click Element</arg>
+<arg>${TAB_INSURANT}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.348042" elapsed="0.043192"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.392234" level="INFO">Clicking element 'id=nextenterproductdata'.</msg>
+<arg>${BTN_NEXT_PRODUCT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.392234" elapsed="0.043505"/>
+</kw>
+<arg>Click Element</arg>
+<arg>${BTN_NEXT_PRODUCT}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.391234" elapsed="0.044505"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='enterinsurantdata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.435739" elapsed="0.006020"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.443264" level="INFO">Clicking element 'id=enterproductdata'.</msg>
+<arg>${TAB_PRODUCT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.443264" elapsed="0.042952"/>
+</kw>
+<arg>Click Element</arg>
+<arg>${TAB_PRODUCT}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.442758" elapsed="0.043458"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.486216" level="INFO">Clicking element 'id=nextselectpriceoption'.</msg>
+<arg>${BTN_NEXT_PRICE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.486216" elapsed="0.048036"/>
+</kw>
+<arg>Click Element</arg>
+<arg>${BTN_NEXT_PRICE}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.486216" elapsed="0.048036"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='enterproductdata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.534252" elapsed="0.007570"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-13T22:00:24.552920" level="INFO">Element 'id=selectsilver' exists but is not displayed.</msg>
+<arg>${SELECT_SILVER}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.541822" elapsed="0.011098"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-13T22:00:24.552920" elapsed="2.133459"/>
+</kw>
+<doc>กรอกข้อมูลไม่สมบูรณ์/ไม่ถูกต้องเพื่อทดสอบการแจ้งเตือนและไม่สามารถไปหน้าเลือก Package ได้</doc>
+<status status="PASS" start="2026-09-13T22:00:15.483906" elapsed="11.203055"/>
+</test>
+<doc>UAT-Lab11-002: การขอใบเสนอราคาผลิตภัณฑ์สำหรับรถยนต์ไม่สำเร็จ</doc>
+<status status="PASS" start="2026-09-13T22:00:15.187691" elapsed="11.499270"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Insurance Test Scenario2" id="s1" pass="1" fail="0" skip="0">Insurance Test Scenario2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
